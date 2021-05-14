@@ -71,6 +71,37 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-冒泡排序：" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/" class="article-date">
+  <time class="dt-published" datetime="2021-05-14T11:43:25.168Z" itemprop="datePublished">2021-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>冒泡排序：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span><span class="comment">//由此推出，如果有 n 个数，则要进行 n - 1 趟比较。在第一趟比较中要进行 n - 1 次两两比较，在第 j 趟比较中要进行 n - j 次两两比较。</span></span></span><br><span class="line"><span class="number">2</span> <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">3 </span>&#123;</span><br><span class="line"><span class="number">4</span>     <span class="keyword">int</span> a[<span class="number">10</span>];</span><br><span class="line"><span class="number">5</span>     <span class="keyword">int</span> i, j, t;</span><br><span class="line"><span class="number">6</span>     <span class="built_in">printf</span>(<span class="string">&quot;input 10 numbers :\n&quot;</span>);<span class="comment">//输入 </span></span><br><span class="line"><span class="number">7</span>     <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)         <span class="comment">//数组 </span></span><br><span class="line"><span class="number">8</span>         <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);         <span class="comment">//a[0]~a[9] </span></span><br><span class="line"><span class="number">9</span>     <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);<span class="number">10</span>     <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)</span><br><span class="line"><span class="number">11</span>        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">9</span> - j; i++)  <span class="comment">//冒泡排序 </span></span><br><span class="line"><span class="number">12</span>         <span class="keyword">if</span> (a[i] &gt; a[i + <span class="number">1</span>])        <span class="comment">//核心算法 ,交换顺序</span></span><br><span class="line"><span class="number">13</span>       </span><br><span class="line">&#123;<span class="number">1</span>              t = a[i];</span><br><span class="line"><span class="number">15</span>             a[i] = a[i + <span class="number">1</span>];</span><br><span class="line"><span class="number">16</span>       a[i + <span class="number">1</span>] = t      &#125;</span><br><span class="line"><span class="number">18</span>     <span class="built_in">printf</span>(<span class="string">&quot;the sorted numbers :\n&quot;</span>);</span><br><span class="line"><span class="number">19</span>     <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)      <span class="comment">//输出 ；</span></span><br><span class="line"><span class="number">20</span>         <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, a[i]);     <span class="comment">//数组 </span></span><br><span class="line"><span class="number">21</span>    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>)；</span><br><span class="line"><span class="number">22</span>     <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="number">23</span> &#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/" data-id="ckoo9697j0001o8vk1z2o25tg" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-贪吃蛇" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/" class="article-date">
@@ -89,7 +120,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/" data-id="ckoo8qhin0002rwvk329lamqi" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/" data-id="ckoo9697n0002o8vk8wlea2pv" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -119,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/12/%E6%9C%AA%E5%91%BD%E5%90%8D/" data-id="ckoo8qhhx0000rwvk0tk00i7n" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/12/%E6%9C%AA%E5%91%BD%E5%90%8D/" data-id="ckoo9697q0003o8vk0g301xxr" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -170,7 +201,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/02/hello-world/" data-id="ckoo8qhi90001rwvkbrq3f9mg" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/02/hello-world/" data-id="ckoo969760000o8vkcy1r4o6x" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -211,6 +242,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/">(no title)</a>
