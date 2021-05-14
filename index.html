@@ -71,6 +71,37 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-快速排序：" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/14/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%EF%BC%9A/" class="article-date">
+  <time class="dt-published" datetime="2021-05-14T11:54:54.752Z" itemprop="datePublished">2021-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>快速排序：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span><span class="comment">//最小K个数；基于数组的第k个数字来调整，使得比第k个数字小的所有数字都位于数组的左边</span></span></span><br><span class="line"><span class="comment">//比第k个数字大的所有数字都位于数组的右边。调整之后，位于数组左边的k个数字就是最小的k个数字//</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span>;<span class="comment">//声明函数partition</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">9</span>] = &#123; <span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">9</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">2</span>&#125;;<span class="comment">//定义数组a【i】</span></span><br><span class="line">	partition(a,<span class="number">0</span>,<span class="number">8</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">8</span>; i++)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, a[i]);<span class="comment">//循环打印数组a【i】</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span><span class="comment">//定义函数partition</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> b = a[low];<span class="comment">//第一个记录作为枢轴(也可是在begin和end之间的随机数)</span></span><br><span class="line">	<span class="keyword">int</span> i = low;</span><br><span class="line">	<span class="keyword">int</span> j = high;</span><br><span class="line">	<span class="keyword">while</span> (i &lt; j)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span> (i &lt; j &amp;&amp; a[j] &gt;= b)</span><br><span class="line">			j--;</span><br><span class="line">		a[i] = a[j];<span class="comment">//尾部找到小于pivot的值,移到低端</span></span><br><span class="line">		<span class="keyword">while</span> (i &lt; j &amp;&amp; a[i] &lt;= b)</span><br><span class="line">			i++;</span><br><span class="line">		a[j] = a[i];<span class="comment">//头部找到大于pivot的值,移到高端</span></span><br><span class="line">	&#125;</span><br><span class="line">	a[j]= b;<span class="comment">//枢轴基准归位</span></span><br><span class="line">	<span class="keyword">return</span> j;<span class="comment">//递归 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/14/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%EF%BC%9A/" data-id="ckoo9l0dp0002n4vkdbcx1hej" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-冒泡排序：" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/" class="article-date">
@@ -90,7 +121,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/" data-id="ckoo9d7b20002lcvk4o0s52fd" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/" data-id="ckoo9l0dh0001n4vk9lzde993" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -121,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/" data-id="ckoo9d7bj0003lcvk966a2aad" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/05/14/%E8%B4%AA%E5%90%83%E8%9B%87/" data-id="ckoo9l0e90004n4vk22bneqbc" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -151,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/12/%E6%9C%AA%E5%91%BD%E5%90%8D/" data-id="ckoo9d7av0001lcvk85i34apa" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/12/%E6%9C%AA%E5%91%BD%E5%90%8D/" data-id="ckoo9l0ds0003n4vk27iw4r93" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -202,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/02/hello-world/" data-id="ckoo9d7a80000lcvkb03idmmr" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/02/hello-world/" data-id="ckoo9l0cv0000n4vkd1vm2xpz" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -243,6 +274,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/05/14/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%EF%BC%9A/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2021/05/14/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A/">(no title)</a>
